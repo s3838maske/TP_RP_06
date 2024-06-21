@@ -1,94 +1,190 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* Tag Selectors */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Globle selector */
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Tag Selectors */
 li {
- list-style: none;
-}
-/* 
-body{
-   
-} */
-
-h1 {
-    text-align: center;
-    color: rgb(9, 104, 105);
+  list-style: none;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 16%,
+    rgba(89, 179, 197, 1) 69%
+  );
+  /* background-image: url(https://images.pexels.com/photos/4840134/pexels-photo-4840134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);      
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
 
 /* Login Code Start */
 
-
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    margin-left: 45%;
-    margin-top: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-/* 
-input{
-    padding: 7px 20px;
-    margin: 10px 0;
-} */
-
-label{
-    font-size: 18px;
-}
-/* ID Selectors  Unique*/
-
-
-#submit{
-    border-radius: 5px;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    background-color: rgb(45, 105, 218);
-    cursor: pointer;
+.back-img img {
+  object-fit: cover;
+  position: relative;
 }
 
-/* class Selectors */
-.form-input{
-    padding: 7px 20px;
-    margin: 10px 0;
-   border-radius: 8px;
+.form-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #bbb9b981;
+  color: white;
+  margin: 10% 34%;
+  border-radius: 10px;
+  padding: 35px 15px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-.form-container{
-    background-color:white ;
-    width: 0%;
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: left;
 }
 
+.login-form > input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: #c2c3c48f;
+}
+
+.login-form > input:focus {
+  border: 2px solid #0357ff;
+}
+
+.login-form > input[type="submit"] {
+  background-color: #3572ef;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  padding: 12px;
+  margin-top: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-form > input[type="submit"]:hover {
+  background-color: #3864bd;
+}
 
 /* Login Code End */
 
-
 /* Navbar Code Start */
 
-.navbar-container{
-    background-color: rgb(236, 133, 48);
-    padding: 20px 40px;
-
+.navbar-container {
+  background-color: #ffffff59;
+  padding: 20px 40px;
+  color: white;
+  border-radius: 0 0 7px 7px;
 }
 
-.navbar-main{
-    display: flex;
-   align-items: center;
-    justify-content: space-between;
+.navbar-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar-main > div > ul{
-    display: flex;
-    gap: 20px;
-    color: rgb(247, 247, 247);
+.navbar-main > div > ul {
+  display: flex;
+  gap: 40px;
+  color: #0d388f;
+  cursor: pointer;
+  font-weight: 600;
 }
 
+.navbar-main > div > ul > li:hover {
+  text-decoration: underline;
+  color: rgb(10, 157, 255);
+}
 
 /* Navbar Code End */
+
+/* Main file code started */
+
+.main-nav ion-icon{
+    font-size: 25px;
+}
+
+.about-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 5%;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.76);
+  padding: 25px 35px;
+  border-radius: 10px;
+}
+
+.about-text {
+  margin-right: 50px;
+  text-align: left;
+  width: 400px;
+}
+
+.about-text > h2 {
+  font-size: 40px;
+  color: rgb(26, 26, 26);
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.about-text > p {
+  font-size: 15px;
+  color: grey;
+  margin: 20px 0;
+}
+
+
+.contact-heading{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.contact-box {
+    background-color: rgba(255, 255, 255, 0.521);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 2% 20%;
+  border-radius: 10px;
+}
+
+.contact-form > input{
+    padding: 18px 20px;
+    margin: 10px 20px;
+    border-radius: 7px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    background-color: rgba(214, 214, 214, 0.589);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.contact-form > input[type="submit"] {
+    background-color: #615fff;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+
+/* Main file code end*/
